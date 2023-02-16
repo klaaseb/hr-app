@@ -16,7 +16,7 @@ class AppFixtures extends Fixture
 
         // creating transport types
         $transportTypes = [
-            ['name' =>  'Bike', 'compensation' => 0.10, 'double_threshold' => 5], // id 1
+            ['name' =>  'Bike', 'compensation' => 0.50, 'double_threshold' => 5], // id 1
             ['name' =>  'Car', 'compensation' => 0.10], // id 2
             ['name' =>  'Bus', 'compensation' => 0.25], // id 3
             ['name' =>  'Train', 'compensation' => 0.25], // id 4
