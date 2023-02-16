@@ -4,6 +4,9 @@ namespace App\HrCalculations;
 
 class CalculationOptions
 {
+    # due to time constraints only employee Id is implemented in the functionality
+    # I was planning to support multiple calculating options
+
     private ?int $employeeId = null;
     private ?bool $yearToDate = true;
     private ?int $month = null;
