@@ -11,6 +11,9 @@
 <div class="example-wrapper">
     <h1>Employees</h1>
 
+    <a href="{{ url('view_all') }}"><button type="button" class="btn btn-primary"><i class="far fa-eye"></i>&nbsp; Toon maandelijkse overzicht</button></a>
+    <a href="{{ url('download_all') }}"><button type="button" class="btn btn-success"><i class="fas fa-download"></i>&nbsp; Download maandelijkse overzicht</button></a>
+    <br/><br/>
     <table class="table">
   <thead>
     <tr>
@@ -30,8 +33,8 @@
             <td>{{employee.distance}}</td>
             <td>{{employee.workdays}}</td>
             <td>
-              <button type="button" class="btn btn-primary"><i class="far fa-eye"></i></button>
-              <button type="button" class="btn btn-success"><i class="fas fa-download"></i></button>
+              <a href="{{ url('view_employee', {id: employee.id}) }}"><button type="button" class="btn btn-primary"><i class="far fa-eye"></i></button></a>
+              <a href="{{ url('download_employee', {id: employee.id}) }}"><button type="button" class="btn btn-success"><i class="fas fa-download"></i></button><a/>
             </td>
         </tr>
     {% endfor %}
